@@ -1,0 +1,6 @@
+apiVersion: v2
+name: external-service
+description: Create Nginx ingress for a service outside of the Kubernetes cluster
+type: application
+version: 0.0.1
+appVersion: "0.0.1"

@@ -1,0 +1,11 @@
+---
+serviceName: my-service
+certificateIssuerName: lets-encrypt
+
+originServer:
+  protocol: HTTPS
+  port: 8080
+  address: 192.0.2.1
+
+ingressVirtualHost: my.service.internal
+...
