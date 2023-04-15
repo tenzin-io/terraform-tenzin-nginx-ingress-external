@@ -15,6 +15,16 @@ variable "external_services" {
   description = "A map of external services."
 }
 
+variable "redirect_services" {
+  type = map(object({
+    virtual_host = string
+    redirect_url = string
+  }))
+  default     = {}
+  description = "A map of redirect services."
+}
+
+
 variable "cert_issuer_name" {
   type        = string
   description = "The name of the certificate issuer, from cert-manager."

@@ -1,0 +1,6 @@
+---
+serviceName: my-service
+certificateIssuerName: lets-encrypt
+redirectURL: localhost
+ingressVirtualHost: my.service.internal
+...
