@@ -8,4 +8,5 @@ originServer:
   address: 192.0.2.1
 
 ingressVirtualHost: my.service.internal
+requestSize: 100m
 ...

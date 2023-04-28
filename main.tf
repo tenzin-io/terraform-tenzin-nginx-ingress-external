@@ -34,6 +34,11 @@ resource "helm_release" "nginx_external_services" {
     name  = "ingressVirtualHost"
     value = each.value.virtual_host
   }
+
+  set {
+    name  = "requestSize"
+    value = try(each.value.request_body_size, "100m")
+  }
 }
 
 resource "helm_release" "nginx_redirect_services" {

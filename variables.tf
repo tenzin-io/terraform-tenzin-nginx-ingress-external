@@ -6,10 +6,11 @@ variable "nginx_external_namespace" {
 
 variable "external_services" {
   type = map(object({
-    virtual_host = string
-    address      = string
-    protocol     = string
-    port         = string
+    virtual_host      = string
+    address           = string
+    protocol          = string
+    port              = string
+    request_body_size = optional(string)
   }))
   default     = {}
   description = "A map of external services."
