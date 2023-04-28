@@ -37,7 +37,7 @@ resource "helm_release" "nginx_external_services" {
 
   set {
     name  = "requestSize"
-    value = try(each.value.request_body_size, "100m")
+    value = each.value.request_body_size
   }
 }
 

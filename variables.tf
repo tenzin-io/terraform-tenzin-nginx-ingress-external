@@ -10,7 +10,7 @@ variable "external_services" {
     address           = string
     protocol          = string
     port              = string
-    request_body_size = optional(string)
+    request_body_size = optional(string, "100m")
   }))
   default     = {}
   description = "A map of external services."
